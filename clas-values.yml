@@ -1,0 +1,6 @@
+pce_url: ILO_SERVER
+cluster_id: ILO_CLUSTER_UUID
+cluster_token: ILO_CLUSTER_TOKEN
+cluster_code: ILO_CODE
+containerRuntime: containerd  # Container runtime engine used in cluster, allowed values are [containerd, docker, crio]
+containerManager: kubernetes # Container manager used in cluster, allowed values are [kubernetes, openshift]
