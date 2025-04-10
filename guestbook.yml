@@ -164,13 +164,20 @@ spec:
   # if your cluster supports it, uncomment the following to automatically create
   # an external load-balanced IP for the frontend service.
   # type: LoadBalancer
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 80
-    nodePort: 30010
+    targetPort: 80
   selector:
     app: guestbook
     tier: frontend
+  # type: NodePort
+  # ports:
+  # - port: 80
+  #   nodePort: 30010
+  # selector:
+  #   app: guestbook
+  #   tier: frontend
 # [END gke_all_in_one_guestbook_all_in_one_service_frontend]
 ---
 # [START gke_all_in_one_guestbook_all_in_one_deployment_frontend]
