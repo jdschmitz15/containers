@@ -24,10 +24,10 @@ metadata:
   name: redis-leader
   namespace: guestbook
   annotations:
-    com.illumio.role: redis-leader
+    com.illumio.role: redis
     com.illumio.app: guestbook
     com.illumio.env: prod
-    com.illumio.loc: ny
+    com.illumio.loc: hol
   labels:
     app: redis
     role: leader
@@ -60,10 +60,10 @@ spec:
   template:
     metadata:
       annotations:
-        com.illumio.role: redis-leader
+        com.illumio.role: redis
         com.illumio.app: guestbook
         com.illumio.env: prod
-        com.illumio.loc: ny
+        com.illumio.loc: hol
       labels:
         app: redis
         role: leader
@@ -87,10 +87,10 @@ metadata:
   name: redis-follower
   namespace: guestbook
   annotations:
-    com.illumio.role: redis-follower
+    com.illumio.role: redis
     com.illumio.app: guestbook
     com.illumio.env: prod
-    com.illumio.loc: ny
+    com.illumio.loc: hol
   labels:
     app: redis
     role: follower
@@ -123,10 +123,10 @@ spec:
   template:
     metadata:
       annotations:
-        com.illumio.role: redis-follower
+        com.illumio.role: redis
         com.illumio.app: guestbook
         com.illumio.env: prod
-        com.illumio.loc: ny
+        com.illumio.loc: hol
       labels:
         app: redis
         role: follower
@@ -151,10 +151,10 @@ metadata:
   name: frontend
   namespace: guestbook
   annotations:
-    com.illumio.role: frontend
+    com.illumio.role: web
     com.illumio.app: guestbook
     com.illumio.env: prod
-    com.illumio.loc: ny
+    com.illumio.loc: hol
   labels:
     app: guestbook
     tier: frontend
@@ -195,10 +195,10 @@ spec:
   template:
     metadata:
       annotations:
-        com.illumio.role: frontend
+        com.illumio.role: web
         com.illumio.app: guestbook
         com.illumio.env: prod
-        com.illumio.loc: ny
+        com.illumio.loc: hol
       labels:
         app: guestbook
         tier: frontend
