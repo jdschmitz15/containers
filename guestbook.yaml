@@ -59,7 +59,7 @@ spec:
       app: redis
   template:
     metadata:
-      # annotations:
+      annotations:
       #   com.illumio.role: redis
       #   com.illumio.app: guestbook
       #   com.illumio.env: prod
@@ -86,7 +86,7 @@ kind: Service
 metadata:
   name: redis-follower
   namespace: guestbook
-  # annotations:
+  annotations:
   #   com.illumio.role: redis
   #   com.illumio.app: guestbook
   #   com.illumio.env: prod
@@ -122,7 +122,7 @@ spec:
       app: redis
   template:
     metadata:
-      # annotations:
+      annotations:
       #   com.illumio.role: redis
       #   com.illumio.app: guestbook
       #   com.illumio.env: prod
@@ -150,7 +150,7 @@ kind: Service
 metadata:
   name: frontend
   namespace: guestbook
-  # annotations:
+  annotations:
   #   com.illumio.role: web
   #   com.illumio.app: guestbook
   #   com.illumio.env: prod
@@ -194,7 +194,7 @@ spec:
         tier: frontend
   template:
     metadata:
-      # annotations:
+      annotations:
       #   com.illumio.role: web
       #   com.illumio.app: guestbook
       #   com.illumio.env: prod
