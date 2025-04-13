@@ -3,6 +3,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: nginx
+  annotations:
+    com.illumio.pairing_key: <replace with your pairing key>
 ---
 apiVersion: v1
 kind: Service
