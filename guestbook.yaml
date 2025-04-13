@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: redis-leader
   namespace: guestbook
-  # annotations:
+  annotations:
   #   com.illumio.role: redis
   #   com.illumio.app: guestbook
   #   com.illumio.env: prod
