@@ -9,7 +9,7 @@ metadata:
 apiVersion: v1
 kind: Service
 metadata:
-  name: enginx
+  name: nginx
   namespace: nginx
   labels:
     app: nginx
@@ -25,7 +25,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eks-sample-linux-deployment
+  name: nginx
   namespace: nginx
   labels:
     app: nginx
@@ -39,7 +39,7 @@ spec:
   template:
     metadata:
       labels:
-        app: enginx
+        app: nginx
     spec:
       affinity:
         nodeAffinity:
