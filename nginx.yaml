@@ -13,6 +13,8 @@ metadata:
   namespace: nginx
   labels:
     app: nginx
+  annotations:
+    com.illumio.role: web
 spec:
   type: LoadBalancer
   ports:
@@ -27,6 +29,8 @@ metadata:
   namespace: nginx
   labels:
     app: nginx
+  annotations:
+    com.illumio.role: web
 spec:
   replicas: 3
   selector:
