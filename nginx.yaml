@@ -12,14 +12,14 @@ metadata:
   name: nginx
   namespace: nginx
   labels:
-    app: nginx
+    application: nginx
     function: frontend
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
-    app: nginx
+    application: nginx
     function: frontend
 ---
 apiVersion: apps/v1
@@ -28,18 +28,18 @@ metadata:
   name: nginx
   namespace: nginx
   labels:
-    app: nginx
+    application: nginx
     function: frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      application: nginx
       function: frontend
   template:
     metadata:
       labels:
-        app: nginx
+        application: nginx
         function: frontend
     spec:
       affinity:
