@@ -13,12 +13,12 @@ metadata:
     app.kubernetes.io/name: deathstar
 spec:
 type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: 80
-  selector:
-    app:  deathstar
-    org: empire
+ports:
+- port: 80
+  targetPort: 80
+selector:
+  app:  deathstar
+  org: empire
   # type: ClusterIP
   # ports:
   # - port: 80
