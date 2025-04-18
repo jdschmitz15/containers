@@ -59,7 +59,7 @@ metadata:
   namespace: deathstar
   labels:
     org: empire
-    class: tiefighter
+    class: vader
     app.kubernetes.io/name: tiefighter
 spec:
   containers:
@@ -74,7 +74,7 @@ metadata:
   labels:
     app.kubernetes.io/name: xwing
     org: alliance
-    class: xwing
+    class: luke
 spec:
   containers:
   - name: spaceship

@@ -12,6 +12,14 @@ workloadLabelMap:
   - allowCreate: true
     fromKey: app.kubernetes.io/name
     toKey: app
+    valuesMap:
+      - from: deathstar
+        to: deathstar
+      - from: tiefighter
+        to: tiefighter
+  - allowCreate: true
+    fromKey: class
+    toKey: role
   - allowCreate: true
     fromKey: org
     toKey: env
