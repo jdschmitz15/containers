@@ -11,6 +11,7 @@ metadata:
   namespace: deathstar
   labels:
     app.kubernetes.io/name: deathstar
+    org: empire
 spec:
   type: LoadBalancer
   ports:
@@ -33,6 +34,7 @@ metadata:
   namespace: deathstar
   labels:
     app.kubernetes.io/name: deathstar
+    org: empire
 spec:
   replicas: 2
   selector:
