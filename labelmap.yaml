@@ -8,9 +8,15 @@ workloadLabelMap:
     toKey: app
     valuesMap:
       - from: nginx
-        to: nginx
+        to: newnginx
+  - allowCreate: true
+    fromKey: app.kubernetes.io/name
+    toKey: app
       - from: deathstar
         to: starwars
   - allowCreate: true
+    fromKey: org
+    toKey: env
+  - allowCreate: false
     fromKey: function
     toKey: role
