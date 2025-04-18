@@ -1,7 +1,7 @@
 kind: LabelMap
 apiVersion: ic4k.illumio.com/v1alpha1
 metadata:
-  name: hollabelmap
+  name: default
 workloadLabelMap:
   - allowCreate: true
     fromKey: application
