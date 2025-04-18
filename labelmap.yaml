@@ -1,0 +1,16 @@
+kind: LabelMap
+apiVersion: ic4k.illumio.com/v1alpha1
+metadata:
+  name: default
+nodeLabelMap:
+  - allowCreate: true
+    fromKey: application
+    toKey: app
+    valuesMap:
+      - from: nginx
+        to: nginx
+      - from: deathstar
+        to: starwars
+  - allowCreate: true
+    fromKey: function
+    toKey: role
