@@ -28,6 +28,19 @@ workloadLabelMap:
         to: empire
       - from: alliance
         to: alliance
-  # - allowCreate: false
-  #   fromKey: function
-  #   toKey: role
+
+# nodeLabelMap:
+#   - allowCreate: true
+#     fromKey: kubernetes.io/arch
+#     toKey: arch
+#     valuesMap:
+#       - from: amd64
+#         to: x86_64
+#       - from: arm64
+#         to: arm64
+#   - allowCreate: true
+#     fromKey: kubernetes.io/os
+#     toKey: os
+#     valuesMap:
+#       - from: linux
+#         to: linux
