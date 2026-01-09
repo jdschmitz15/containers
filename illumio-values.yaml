@@ -1,8 +1,8 @@
-pce_url: URL_PORT
+pce_url: poc4.illum.io:443
 cluster_id: ILO_CLUSTER_UUID
 cluster_token: ILO_CLUSTER_TOKEN
 cluster_code: ILO_CODE
-containerRuntime: RUNTIME # supported values: [containerd (default), docker, crio, k3s_containerd]
-containerManager: MANAGER # supported values: [kubernetes, openshift]
+containerRuntime: containerd # supported values: [containerd (default), docker, crio, k3s_containerd]
+containerManager: kubernetes # supported values: [kubernetes, openshift]
 networkType: flat # CNI type, allowed values are [overlay, flat]
 clusterMode: clas # 

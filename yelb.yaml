@@ -8,7 +8,6 @@ metadata:
 apiVersion: v1
 kind: Service
 metadata:
-  name: yelb-redis
   namespace: yelb
   annotations:
     com.illumio.role: redis
@@ -30,7 +29,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: yelb-backend
   namespace: yelb
   annotations:
     com.illumio.role: db
@@ -52,7 +50,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: yelb-processing
   namespace: yelb
   annotations:
     com.illumio.role: processing        
@@ -74,7 +71,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: yelb-frontend
   namespace: yelb
   annotations:
     com.illumio.role: web
