@@ -20,12 +20,13 @@ spec:
   selector:
     app.kubernetes.io/name:  deathstar
     org: empire
-  # type: ClusterIP
+  # type: NodePort
   # ports:
   # - port: 80
+  #   nodePort: 30013
   # selector:
-  #   org: empire
-  #   class: deathstar
+  #  app.kubernetes.io/name:  deathstar
+  #  org: empire
 ---
 apiVersion: apps/v1
 kind: Deployment
