@@ -1,0 +1,46 @@
+kind: LabelMap
+apiVersion: ic4k.illumio.com/v1alpha1
+metadata:
+  name: default
+workloadLabelMap:
+  - allowCreate: true
+    fromKey: application
+    toKey: app
+    valuesMap:
+      - from: nginx
+        to: updated-nginx
+  - allowCreate: true
+    fromKey: app.kubernetes.io/name
+    toKey: app
+    valuesMap:
+      - from: deathstar
+        to: deathstar
+      - from: tiefighter
+        to: tiefighter
+  - allowCreate: true
+    fromKey: class
+    toKey: role
+  - allowCreate: true
+    fromKey: org
+    toKey: env
+    valuesMap:
+      - from: empire
+        to: empire
+      - from: alliance
+        to: alliance
+
+# nodeLabelMap:
+#   - allowCreate: true
+#     fromKey: kubernetes.io/arch
+#     toKey: arch
+#     valuesMap:
+#       - from: amd64
+#         to: x86_64
+#       - from: arm64
+#         to: arm64
+#   - allowCreate: true
+#     fromKey: kubernetes.io/os
+#     toKey: os
+#     valuesMap:
+#       - from: linux
+#         to: linux
